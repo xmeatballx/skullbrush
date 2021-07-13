@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style> body {padding: 0; margin: 0; background-color:rgba(255,255,255,0}; </style>
+    <style> 
+    body {
+       padding: 0; 
+       margin: 0; 
+      touch-action: none;
+    }
+    #p5container {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    </style>
     <script src="p5.js"></script>
     <script src="p5.sound.js"></script>
     <script src="sketch.js"></script>
   </head>
   <body>
+    <div id="p5container"></div>
     <h3 align="center">Click anywhere to start drawing!</h3>
-    <h5 align="center">Play with arrow key to create different patterns</h5>
+    <h5 align="center">Play with arrow keys to create different patterns</h5>
   </body>
 </html>

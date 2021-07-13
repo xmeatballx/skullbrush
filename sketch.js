@@ -10,7 +10,8 @@ let colorSwap=false;
 
 
 function setup(){
-createCanvas(1750,650);
+let c = createCanvas(windowWidth,windowHeight);
+c.parent('p5container')
 skull = loadImage("skull.png");
 skull.resize(100,125);
 clear(); //clear background when program starts
